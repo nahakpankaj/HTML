@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAMP</title>
+    <style>
+        .lamp{
+            height: 23rem;
+            width: 12 rem;
+            position: rgb(36,154,97);
+            background: linear-gradient(90 deg, 
+                rgba(36, 154, 97, 1) 10%,
+                rgba(50, 170, 113,1 ) 30%,
+                rgba(36, 154, 97, 1) 55%);
+            z-index: 20;
+            border-radius: 50%;
+            clip-path: polygon(30%, 0, 70%, 0
+                100%, 65%, 70%, 100%,
+                30%, 100%, 0 65%);
+        }
+
+        .top-cover, .bottom-cover {
+            width: 100%;
+            height: 17.5%;
+            position: absolute;
+        }
+
+        .top-cover{
+            background: rgb(24,24,24);
+            background: linear-gradient(90 deg,
+                rgba(24, 24, 24, 1) 30%,
+                rgba(37, 41, 36,1 ) 45%,
+                rgba(24, 24, 24, 1) 100%);
+        }
+
+        .bottom-cover{
+            background: rgb(35,40,33);
+            background: linear-gradient(90 deg,
+                rgba(35, 40, 33, 1) 25%,
+                rgba(42, 50, 41, 1) 45%,
+                rgba(35, 40, 33, 1) 63%);
+            top: 85%;
+        }
+
+        .lamp-bottom {
+            width: 0;
+            height: 0;
+            border-left: 6rem solid transparent;
+            border-right: 6rem solid transparent;
+            border-top: 6rem soild rgba(35, 40, 33, 1);
+            border-radius: 50%;
+            transform: rotate(180deg);
+            position: absolute;
+            top: 70%;
+        }
+
+        .blob1, .blob2, .blob3{
+            position: absolute;
+            top: 0;
+            left: 0;
+            fill: #00ff73;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="lamp">
+        <div class="top-cover"></div>
+        <div class="bubble1"></div>
+        <div class="bubble2"></div>
+        <div class="bubble3"></div>
+        <div class="blob1"></div>
+        <div class="blob2"></div>
+        <div class="blob3"></div>
+        <div class="bottom-cover"></div>
+    </div>
+    <div class="lamp-bottom"></div>
+</body>
+</html>
